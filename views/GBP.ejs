@@ -1,0 +1,26 @@
+
+<!-- header -->
+<%- include('./partials/head.ejs') %>
+<body>
+    <!-- nav -->
+    <%- include('./partials/nav.ejs') %>
+</body>
+ <div class="container">           
+     <div class="card card-body ">
+       <ul class=" list-unstyled text-center list-group">
+            <li class="list-group-item active">Base: <%=GBP.base %></li>
+            <li class="list-group-item"><b>Rates:</b></li>
+            <li class="list-group-item">EUR: <%=GBP.rates.EUR %></li>
+            <li class="list-group-item"></i>USD: <%=GBP.rates.USD %></li>
+            <li class="list-group-item">CZK: <%=GBP.rates.CZK %></li>
+            <li class="list-group-item">CAD: <%=GBP.rates.CAD %></li>
+            <li class="list-group-item">BGN: <%=GBP.rates.BGN %></li>
+            <li class="list-group-item">PLN: <%=GBP.rates.PLN %></li>
+            <li class="list-group-item active">Current Date: <%=GBP.date %><li>
+       </ul>  
+      
+     </div>
+ </div>
+ <!-- footbar with ejs include synthax -->
+<%- include('./partials/footer.ejs') %>
+</html>

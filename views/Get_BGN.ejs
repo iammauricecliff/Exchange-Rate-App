@@ -1,0 +1,26 @@
+<!-- header -->
+<%- include('./partials/head.ejs') %>
+<body>
+    <!-- nav -->
+    <%- include('./partials/nav.ejs') %>
+</body>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+                <form action="/api/rates/Post_BGN" method="POST">
+                    <div class="form-group">
+                        <label>Get the current BGN just type 'BGN' and submit note case sensitive(to avoid error page!)</label>
+                        <input type="text" class="form-control" placeholder="Type BGN here and submit" name="name" required>
+                        <button type="submit" class="btn btn-info mt-3">Get BGN Rate</button>
+                    </div>
+                </form>
+
+        </div>
+        <div class="col-lg-4"></div>
+
+      </div>
+  </div>
+  <!-- footbarbar with ejs include synthax -->
+<%- include('./partials/footer.ejs') %>
+</html>
